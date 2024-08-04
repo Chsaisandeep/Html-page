@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Three Sections Example</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+.section {
+padding: 20px;
+color: #fff;
+min-height: 200px;
+}
+          
+.section:nth-of-type(1) {
+background-color: #f8b400; /* Orange */
+}
+        
+.section:nth-of-type(2) {
+background-color: #4caf50; /* Green */
+}
+
+.section:nth-of-type(3) {
+background-color: #2196f3; /* Blue */
+}
+
+.section label {
+display: block;
+margin-bottom: 10px;
+}
+
+.section input, .section select, .section a {
+margin-top: 5px;
+display: block;
+width: 100%;
+max-width: 300px;
+}
+
+.section a {
+color: #fff;
+text-decoration: none;
+font-weight: bold;
+}
+
+.section a:hover {
+text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<div class="section">
+<label for="dropdown">Choose your gender:</label>
+<select id="dropdown" name="dropdown">
+<option value="option1">male</option>
+<option value="option2">female</option>
+<option value="option3">others</option>
+</select>
+</div>
+
+<div class="section">
+<fieldset>
+<legend>Choose your area:</legend>
+<input type="radio" id="radio1" name="area" value="Hyderabad">
+<label for="radio1">Hyderabad</label>
+<input type="radio" id="radio2" name="area" value="Kammam">
+<label for="radio2">Kammam</label>
+<input type="radio" id="radio3" name="area" value="Warangal">
+<label for="radio3">Warangal</label>
+</fieldset>
+</div>
+
+<div class="section">
+<a href="https://www.example.com" target="_blank">Visit Maatv.com</a>
+<label for="text-box">Enter your address:</label>
+<input type="text" id="text-box" name="text-box" placeholder="Type here...">
+</div>
+</body>
+</html>
